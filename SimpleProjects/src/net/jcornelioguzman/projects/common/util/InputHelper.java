@@ -2,12 +2,12 @@ package net.jcornelioguzman.projects.common.util;
 
 import java.util.Scanner;
 
-public class InputHelper {
+public final class InputHelper {
 
 	private static Scanner sc = new Scanner(System.in);
 
-	private InputHelper() {
-	}
+	//This will prevent instantiation of helper class
+	private InputHelper() {}
 
 	public static int getIntInput() {
 		return sc.nextInt();
