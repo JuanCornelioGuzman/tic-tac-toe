@@ -10,7 +10,7 @@ public final class InputHelper {
 	private InputHelper() {}
 
 	public static int getIntInput() {
-		return sc.nextInt();
+		return Integer.parseInt(sc.nextLine());
 	}
 
 	public static char getCharInput() {
