@@ -3,8 +3,14 @@ package net.jcornelioguzman.projects.seatreservation.domain;
 import java.util.HashMap;
 import java.util.Map;
 
-import net.jcornelioguzman.projects.seatreservation.util.ResevationConstants;
+import net.jcornelioguzman.projects.seatreservation.util.ReservationConstants;
 
+/**
+ * Input Utility for CLI programs
+ *
+ * @author Juan Cornelio Guzman
+ * @since July 15, 2015
+ */
 public class SeatBoard {
 
 	private int row;
@@ -21,12 +27,13 @@ public class SeatBoard {
 		for (int i = 0; i < row; i++) {
 			for (int j = 1; j <= column; j++) {
 
-				String id = String.valueOf((char)(ResevationConstants.FIRST_ROW+i))
+				String id = String
+						.valueOf((char) (ReservationConstants.FIRST_ROW + i))
 						+ String.valueOf(j);
-				
+
 				Seat seat = new Seat();
 				seat.setColumn(j);
-				seat.setRow((char) (ResevationConstants.FIRST_ROW + i));
+				seat.setRow((char) (ReservationConstants.FIRST_ROW + i));
 				seat.setSeatId(id);
 				seat.setReserved(false);
 
@@ -38,16 +45,17 @@ public class SeatBoard {
 	public void displayBoard() {
 		for (int i = 0; i < row; i++) {
 			for (int j = 1; j <= column; j++) {
-				String id = String.valueOf((char)(ResevationConstants.FIRST_ROW+i))
+				String id = String
+						.valueOf((char) (ReservationConstants.FIRST_ROW + i))
 						+ String.valueOf(j);
-				System.out.print(seatMap.get(id).getDisplay()+" ");
+				System.out.print(seatMap.get(id).getDisplay() + " ");
 			}
 			System.out.println();
 		}
 		System.out.println();
 	}
-	
-	public Seat getSeat(String id){
+
+	public Seat getSeat(String id) {
 		return seatMap.get(id);
 	}
 }

@@ -1,7 +1,13 @@
 package net.jcornelioguzman.projects.seatreservation.domain;
 
-import net.jcornelioguzman.projects.seatreservation.util.ResevationConstants;
+import net.jcornelioguzman.projects.seatreservation.util.ReservationConstants;
 
+/**
+ * Seat POJO
+ *
+ * @author Juan Cornelio Guzman
+ * @since July 15, 2015
+ */
 public class Seat {
 
 	private String seatId;
@@ -71,7 +77,7 @@ public class Seat {
 
 	public String getDisplay() {
 		if (isReserved) {
-			return ResevationConstants.RESERVED;
+			return ReservationConstants.RESERVED;
 		} else {
 			return seatId;
 		}

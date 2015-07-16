@@ -1,13 +1,19 @@
 package net.jcornelioguzman.projects.seatreservation.util;
 
-public class ResevationConstants {
+/**
+ * Constant Class for Seat Reservation
+ *
+ * @author Juan Cornelio Guzman
+ * @since July 15, 2015
+ */
+public final class ReservationConstants {
 
-	private ResevationConstants() {
+	private ReservationConstants() {
 	}
 
-	/**Value of seat once reserved*/
+	/** Value of seat once reserved */
 	public static final String RESERVED = "XX";
-	
+
 	public static final String WELCOME_MESSAGE = "Welcome to Seat Reservation System!\n";
 
 	public static final String PROMPT_NO_OF_SEATS = "How many seat you want to reserve? :";
@@ -16,7 +22,7 @@ public class ResevationConstants {
 
 	public static final String PROMPT_SEAT_NO = "Enter Seat ";
 
-	/**int value of A is 65*/
+	/** int value of A is 65 */
 	public static final char FIRST_ROW = 65;
 
 }
