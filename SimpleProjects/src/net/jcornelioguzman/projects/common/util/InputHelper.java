@@ -10,21 +10,21 @@ import java.util.Scanner;
  */
 public final class InputHelper {
 
-	private static Scanner sc = new Scanner(System.in);
+	private static final Scanner SCAN = new Scanner(System.in);
 
 	// This will prevent instantiation of helper class
 	private InputHelper() {
 	}
 
 	public static int getIntInput() {
-		return Integer.parseInt(sc.nextLine());
+		return Integer.parseInt(SCAN.nextLine());
 	}
 
 	public static char getCharInput() {
-		return sc.nextLine().charAt(0);
+		return SCAN.nextLine().charAt(0);
 	}
 
 	public static String getStringInput() {
-		return sc.nextLine();
+		return SCAN.nextLine();
 	}
 }
