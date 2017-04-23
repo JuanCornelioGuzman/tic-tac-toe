@@ -1,4 +1,4 @@
-Astounding Adventure
+Tic Tac Toe
 ==================
 
-This repository contains collection of my Java codes base from different coding adventures I had.
+A Java Swing Tic Tac Toe game.
